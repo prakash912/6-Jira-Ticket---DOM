@@ -49,22 +49,26 @@ body{
 
 /*add cross*/
 
-.add-cross_container{
+.add-cross_container,.lock-unlock_container{
     width: 20%;
     display: flex;
+    margin-right: 1rem;
 }
-.add-cross_container>*{
+.add-cross_container>*,.lock-unlock_container>*{
     width: 50%;
     height: 100%;
 }
 
-.plus-container,.multiply-container{
+.plus-container,.multiply-container,.lock-container,.unlock-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.active{
+    background-color: rgb(62, 56, 56);
+  }
 /*Icon as font*/
-.fa-plus,.fa-times{
+.tool_icons{
     font-size: 2rem;
     font-weight: 400;
 }
